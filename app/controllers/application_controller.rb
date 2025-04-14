@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
   include RequestValidation
+  include Authentication
 
   def render_unauthorized()
     render json: { message: "Unauthorized" }, status: :unauthorized

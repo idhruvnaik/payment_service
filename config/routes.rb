@@ -11,6 +11,11 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :login do
+    post "sign_in"
+    post "sign_up"
+  end
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
