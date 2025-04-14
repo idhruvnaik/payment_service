@@ -20,9 +20,9 @@ RSpec.describe User, type: :model do
       expect(@object).not_to be_valid
     end
 
-    # it "validates enum role" do
-    #   expect(User.roles.keys).not_to include("user", "admin", "superadmin")
-    # end
+    it "validates enum role" do
+      expect(User.roles.keys).to include("user", "admin", "superadmin")
+    end
 
   end
 end

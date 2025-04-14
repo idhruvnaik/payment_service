@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  #   enum role: { user: 0, admin: 1, superadmin: 2 }
+  enum role: { user: 0, admin: 1, superadmin: 2 }
 
   VALID_EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\z/i
 
