@@ -45,4 +45,4 @@ end
 
 gem "bcrypt"
 
-gem "rspec-rails", "~> 7.1"
+gem "rspec-rails", "~> 8.0"
